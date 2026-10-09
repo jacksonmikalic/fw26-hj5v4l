@@ -561,7 +561,6 @@ function init() {
     document.getElementById("cat").value = ""; document.getElementById("q").value = "";
     render();
   });
-  if (window.matchMedia && window.matchMedia("(max-width: 600px)").matches) document.getElementById("filt").open = false;
   const tt = document.getElementById("totop");
   window.addEventListener("scroll", () => { tt.hidden = window.scrollY < 900 }, {passive: true});
   tt.addEventListener("click", () => jumpTo(0));
